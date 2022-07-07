@@ -21,6 +21,8 @@ class Initialize:
         else:
             self.installtk()
         fread.close()
+        os.remove(".\\log\\tmp")
+        os.removedirs(".\\log")
 
     def installtk(self):
         os.system("pip install tk")
