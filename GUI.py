@@ -1,4 +1,5 @@
 from tkinter import *
+from initialize import *
 
 
 class GUI:
@@ -24,6 +25,9 @@ class GUI:
 
 
 def main():
+    init = Initialize()
+    init.check()
+
     root = Tk()
     root.geometry('{}x{}'.format(500, 500))
     root.grid_rowconfigure(1, weight=1)
